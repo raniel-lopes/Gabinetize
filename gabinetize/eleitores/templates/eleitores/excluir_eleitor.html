@@ -1,0 +1,6 @@
+<p>Tem certeza que deseja excluir este eleitor?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirmar</button>
+    <a href="{% url 'lista_eleitores' %}">Cancelar</a>
+</form>

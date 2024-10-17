@@ -1,0 +1,6 @@
+<h1>Lista de Eleitores</h1>
+<ul>
+    {% for eleitor in eleitores %}
+        <li>{{ eleitor.nome }} - {{ eleitor.endereco }}</li>
+    {% endfor %}
+</ul>
